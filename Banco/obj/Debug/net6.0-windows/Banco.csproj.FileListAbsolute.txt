@@ -1,0 +1,50 @@
+C:\Users\yoshi\source\repos\Banco\Banco\bin\Debug\net6.0-windows\Banco.exe
+C:\Users\yoshi\source\repos\Banco\Banco\bin\Debug\net6.0-windows\Banco.deps.json
+C:\Users\yoshi\source\repos\Banco\Banco\bin\Debug\net6.0-windows\Banco.runtimeconfig.json
+C:\Users\yoshi\source\repos\Banco\Banco\bin\Debug\net6.0-windows\Banco.dll
+C:\Users\yoshi\source\repos\Banco\Banco\bin\Debug\net6.0-windows\Banco.pdb
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco.csproj.AssemblyReference.cache
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco.Properties.Resources.resources
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco.csproj.GenerateResource.cache
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco.AssemblyInfoInputs.cache
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco.AssemblyInfo.cs
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco.csproj.CoreCompileInputs.cache
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco.dll
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\refint\Banco.dll
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco.pdb
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco.genruntimeconfig.cache
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\ref\Banco.dll
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco.Login.resources
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco.Menu.resources
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco.Register.resources
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco.Deposit_money.resources
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco..Designer.resources
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco..resources
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco.Remove_money.resources
+C:\Users\yoshi\source\repos\Banco\Banco\obj\Debug\net6.0-windows\Banco.Account.resources
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Banco.exe
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Banco.deps.json
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Banco.runtimeconfig.json
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Banco.dll
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Banco.pdb
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.csproj.AssemblyReference.cache
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco..Designer.resources
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco..resources
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.Account.resources
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.Deposit_money.resources
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.Login.resources
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.Menu.resources
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.Properties.Resources.resources
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.Register.resources
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.Remove_money.resources
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.csproj.GenerateResource.cache
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.AssemblyInfoInputs.cache
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.AssemblyInfo.cs
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.csproj.CoreCompileInputs.cache
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.dll
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\refint\Banco.dll
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.pdb
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.genruntimeconfig.cache
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\ref\Banco.dll
