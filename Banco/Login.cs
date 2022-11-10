@@ -18,8 +18,37 @@ namespace Banco
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Menu menu = new Menu();
-            menu.Show();
+            List<User> usersList = UserQuery.registeredUsers();
+
+            if (textBox1.Text.Equals("") || textBox2.Text.Equals(""))
+            {
+                MessageBox.Show("Hay campos en blanco");
+            }
+            else
+            {
+                bool flag = true;
+                try
+                {
+                    foreach (var u in usersList)
+                    {
+                        if (textBox1.Text.Equals(u.username) && textBox2.Text.Equals(u.password))
+                        {
+                            flag = false;
+                            Menu menu = new Menu();
+                            menu.Show();
+                            this.Hide();
+                            break;
+                        }
+                    }
+                    if (flag) MessageBox.Show("No se encontró el usuario");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ocurrió un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)

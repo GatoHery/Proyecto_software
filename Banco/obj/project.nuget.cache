@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "uNEewJg0lGf6QnRnYj69TR7EEGxTSc706x0skUNSw/r44WovNGVLZohlO4kxXsGSyez1nLVf5sehqwKC6CX/bg==",
+  "dgSpecHash": "9ks+mAotxvn4Swdfisir7QykOrXptXA2tC5XdiAWxa4oqX3VIkmyWpa1ThKAchSh3EzpF2OE2IH6lvjIVfJlPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yoshi\\OneDrive\\Bloc de notas\\GitHub\\Proyecto_software\\Banco\\Banco.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\denny\\Desktop\\ProyectoSoftware\\Proyecto_software\\Banco\\Banco.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\denny\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.11\\microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\denny\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.11\\microsoft.windowsdesktop.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\denny\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.11\\microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\denny\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.11\\microsoft.netcore.app.host.win-x64.6.0.11.nupkg.sha512"
+  ],
   "logs": []
 }
