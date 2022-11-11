@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "uNEewJg0lGf6QnRnYj69TR7EEGxTSc706x0skUNSw/r44WovNGVLZohlO4kxXsGSyez1nLVf5sehqwKC6CX/bg==",
+  "dgSpecHash": "8rO/u8JCLRbvzPTOL6cloAHV88SB1fB35zwWIk3ERQGPx3OXe7AklwI4/LO1ng5gW47mQ1w0Y18e5e9SY3yEkA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yoshi\\OneDrive\\Bloc de notas\\GitHub\\Proyecto_software\\Banco\\Banco.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\UNGO\\Documents\\IngSoftware\\Proyecto_software\\Banco\\Banco.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\UNGO\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\UNGO\\.nuget\\packages\\npgsql\\7.0.0\\npgsql.7.0.0.nupkg.sha512",
+    "C:\\Users\\UNGO\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
