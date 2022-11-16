@@ -25,5 +25,35 @@ namespace Banco
         {
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            List<AccountInfo> accountsList = AccountQuery.getAllAccounts();
+            try
+            {
+                //AccountInfo account = new AccountInfo();
+                //account = AccountQuery.getCustomerAccount(textBox1.Text, Convert.ToInt32(textBox2.Text));
+                //int number;
+                //int.TryParse(textBox2.Text, out number);
+                //account = AccountQuery.getCustomerAccount(textBox1.Text, number);
+
+                foreach (var a in accountsList)
+                {
+                    if (textBox1.Text.Equals(a.id_owner))
+                    {
+                        AccountDetails details = new AccountDetails(textBox1.Text, textBox2.Text);
+                        details.Show();
+                        this.Close();
+                        break;
+                    }
+                    
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error" + ex.ToString());
+            }
+        }
     }
 }

@@ -78,7 +78,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(179, 25);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Nombre de usuario:";
+            this.label3.Text = "Número de cuenta:";
             // 
             // label4
             // 
@@ -103,6 +103,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(328, 23);
             this.textBox2.TabIndex = 6;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 

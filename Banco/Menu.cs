@@ -36,8 +36,8 @@ namespace Banco
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Account money2 = new Account();
-            money2.Show();
+            Account viewAccount = new Account();
+            viewAccount.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
