@@ -19,22 +19,13 @@ namespace Banco
             button2.BackColor = Color.FromArgb(222, 234, 238);
             button3.BackColor = Color.FromArgb(222, 234, 238);
             button4.BackColor = Color.FromArgb(112, 195, 223);
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
+            button5.BackColor = Color.FromArgb(112, 195, 223);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Deposit_money depositar = new Deposit_money();
             depositar.Show();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -47,6 +38,19 @@ namespace Banco
         {
             Account money2 = new Account();
             money2.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            this.Close();
+            login.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Register register = new Register();
+            register.ShowDialog();
         }
     }
 }
