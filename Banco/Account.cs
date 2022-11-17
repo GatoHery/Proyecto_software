@@ -28,27 +28,24 @@ namespace Banco
 
         private void button2_Click(object sender, EventArgs e)
         {
+            bool flag = false;
+
             List<AccountInfo> accountsList = AccountQuery.getAllAccounts();
             try
             {
-                //AccountInfo account = new AccountInfo();
-                //account = AccountQuery.getCustomerAccount(textBox1.Text, Convert.ToInt32(textBox2.Text));
-                //int number;
-                //int.TryParse(textBox2.Text, out number);
-                //account = AccountQuery.getCustomerAccount(textBox1.Text, number);
-
                 foreach (var a in accountsList)
                 {
-                    if (textBox1.Text.Equals(a.id_owner))
+                    if (textBox1.Text.Equals(a.id_owner) && textBox2.Text.Equals(a.id_account.ToString()))
                     {
                         AccountDetails details = new AccountDetails(textBox1.Text, textBox2.Text);
                         details.Show();
                         this.Close();
+                        flag = true;
                         break;
                     }
-                    
                 }
 
+                if(!flag) MessageBox.Show("No se encontró la cuenta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

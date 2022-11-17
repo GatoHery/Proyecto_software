@@ -42,8 +42,6 @@ namespace Banco
                     newAccount.account_amount = 0.0;
                     newAccount.id_owner = newUser.id_user;
 
-                    Console.WriteLine(newUser.name,newUser.username,newUser.password,newUser.email);
-
                     UserQuery.registerUser(newUser);
                     AccountQuery.createAccount(newAccount);
 
