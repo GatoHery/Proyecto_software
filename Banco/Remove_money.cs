@@ -26,7 +26,51 @@ namespace Banco
 
         private void button2_Click(object sender, EventArgs e)
         {
+            bool flag = false;
+            List<AccountInfo> accountsList = AccountQuery.getAllAccounts();
 
+            try
+            {
+                foreach (var a in accountsList)
+                {
+                    if (textBox1.Text.Equals(a.id_account.ToString()) && textBox2.Text.Equals(a.id_owner))
+                    {
+                        Transaction t = new Transaction();
+                        //t.date = DateTime.Now;
+                        t.transaction_amount = Convert.ToDouble(textBox3.Text);
+                        t.account_id = Convert.ToInt32(textBox1.Text);
+                        t.transaction_type = 2;
+
+                        TransactionQuery.newTransaction(t);
+
+                        AccountInfo acc = new AccountInfo();
+                        acc = AccountQuery.getCustomerAccount(a.id_owner, a.id_account);
+
+                        double balance = acc.account_amount;
+                        MessageBox.Show("El balance actual es: " + balance.ToString());
+                        balance -= Convert.ToDouble(textBox3.Text);
+
+                        MessageBox.Show("Se retiró la cantidad de\n$" + textBox3.Text);
+
+                        AccountQuery.updateAccountBalance(balance, acc);
+
+                        textBox1.Text = " ";
+                        textBox2.Text = " ";
+                        textBox3.Text = " ";
+
+
+
+                        flag = true;
+                        break;
+                    }
+                }
+
+                if (!flag) MessageBox.Show("No se encontró la cuenta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error" + ex.ToString());
+            }
         }
     }
 }

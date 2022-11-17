@@ -24,14 +24,14 @@ namespace Banco
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Deposit_money depositar = new Deposit_money();
-            depositar.Show();
+            Deposit_money deposit = new Deposit_money();
+            deposit.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Deposit_money depositar = new Deposit_money();
-            depositar.Show();
+            Remove_money withdraw = new Remove_money();
+            withdraw.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -28,7 +28,7 @@ namespace Banco
         {
             bool flag = false;
             List<AccountInfo> accountsList = AccountQuery.getAllAccounts();
-            
+
             try
             {
                 foreach (var a in accountsList)
@@ -47,7 +47,6 @@ namespace Banco
                         acc = AccountQuery.getCustomerAccount(a.id_owner, a.id_account);
 
                         double balance = acc.account_amount;
-                        MessageBox.Show("El balance actual es: " + balance.ToString());
                         balance += Convert.ToDouble(textBox3.Text);
 
                         MessageBox.Show("Se ha aplicado un abono por\n$" + textBox3.Text);
@@ -58,7 +57,7 @@ namespace Banco
                         textBox2.Text = " ";
                         textBox3.Text = " ";
 
-                        
+
 
                         flag = true;
                         break;
