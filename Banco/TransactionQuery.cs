@@ -4,11 +4,13 @@ using System.Data;
 namespace Banco{
     public static class TransactionQuery{
         public static void newTransaction(Transaction t){
-        Connection.ExecuteNonQuery($"INSERT INTO transaction(date, transaction_amount, account_id, transaction_type)" +
-                                   $"VALUES(CURRENT_TIMESTAMP," +
+        Connection.ExecuteNonQuery($"INSERT INTO transactions(account_number, transaction_amount, transaction_comment, transaction_type, transaction_date, transaction_hour)" +
+                                   $"VALUES('{t.account_number}'," +
                                    $"{t.transaction_amount}," +
-                                   $"{t.account_id}," +
-                                   $"{t.transaction_type})");
+                                   $"'{t.transaction_comment}'," +
+                                   $"'{t.transaction_type}'," +
+                                   $"CURRENT_TIMESTAMP," +
+                                   $"CURRENT_TIMESTAMP)");
     }
     }
 }

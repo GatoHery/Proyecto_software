@@ -12,7 +12,8 @@ namespace Banco
 {
     public partial class Menu : Form
     {
-        public Menu()
+        Form loginForm;
+        public Menu(Form loginFrm)
         {
             InitializeComponent();
             button1.BackColor = Color.FromArgb(222, 234, 238);
@@ -20,18 +21,20 @@ namespace Banco
             button3.BackColor = Color.FromArgb(222, 234, 238);
             button4.BackColor = Color.FromArgb(112, 195, 223);
             button5.BackColor = Color.FromArgb(112, 195, 223);
+
+            loginForm = loginFrm;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Deposit_money deposit = new Deposit_money();
-            deposit.Show();
+            deposit.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Remove_money withdraw = new Remove_money();
-            withdraw.Show();
+            withdraw.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -42,9 +45,10 @@ namespace Banco
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
+            //Login login = new Login();
+            loginForm.Show();
             this.Close();
-            login.Show();
+            //login.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)

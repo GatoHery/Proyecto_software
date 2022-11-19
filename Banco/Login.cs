@@ -17,29 +17,28 @@ namespace Banco
 
         private void button1_Click(object sender, EventArgs e)
         {
-            List<Worker> workersList = WorkerQuery.getWorkers();
-
             if (textBox1.Text.Equals("") || textBox2.Text.Equals(""))
             {
                 MessageBox.Show("Hay campos en blanco");
             }
             else
             {
-                bool flag = true;
+                //bool flag = true;
                 try
                 {
-                    foreach (var w in workersList)
+                    string response = WorkerQuery.getWorker(textBox1.Text);
+                    if (textBox2.Text.Equals(response))
                     {
-                        if (textBox1.Text.Equals(w.username) && textBox2.Text.Equals(w.password))
-                        {
-                            flag = false;
-                            Menu menu = new Menu();
-                            menu.Show();
-                            this.Hide();
-                            break;
-                        }
+                        textBox1.Text = "";
+                        textBox2.Text = "";
+                        Menu menu = new Menu(this);
+                        menu.Show();
+                        this.Hide();
                     }
-                    if (flag) MessageBox.Show("Credenciales incorrectas");
+                    else MessageBox.Show("Credenciales incorrectas");
+                }
+                catch(IndexOutOfRangeException ex){
+                    MessageBox.Show("No se encontró el usuario", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
@@ -48,6 +47,11 @@ namespace Banco
             }
 
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

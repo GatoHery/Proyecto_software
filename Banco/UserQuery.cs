@@ -30,12 +30,12 @@ namespace Banco
 
         public static void registerUser(User newUser)
         {
-            Connection.ExecuteNonQuery($"INSERT INTO customer(customer_id, fullname, username, email, pass) " +
+            Connection.ExecuteNonQuery($"INSERT INTO customers(customer_id, fullname, username, email, password) " +
                                         $"VALUES('{newUser.id_user}'," +
                                         $" '{newUser.name}'," +
                                         $"'{newUser.username}'," +
                                         $"'{newUser.email}'," +
-                                        $"{newUser.password})");
+                                        $"'{newUser.password}')");
         }
     }
 }

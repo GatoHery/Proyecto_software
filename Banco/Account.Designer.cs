@@ -76,7 +76,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(72, 201);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(179, 25);
+            this.label3.Size = new System.Drawing.Size(173, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "Número de cuenta:";
             // 
@@ -99,17 +99,18 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(259, 201);
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Location = new System.Drawing.Point(259, 209);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(328, 23);
+            this.textBox2.Size = new System.Drawing.Size(328, 16);
             this.textBox2.TabIndex = 6;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(259, 159);
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(259, 167);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(328, 23);
+            this.textBox1.Size = new System.Drawing.Size(328, 16);
             this.textBox1.TabIndex = 5;
             // 
             // button2
@@ -120,6 +121,7 @@
             this.button2.TabIndex = 10;
             this.button2.Text = "Consultar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Account
             // 

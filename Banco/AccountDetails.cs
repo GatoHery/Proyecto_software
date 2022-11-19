@@ -19,17 +19,22 @@ namespace Banco
             showInfo(id_owner, account_id);
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void showInfo(string id_owner, string account_id)
         {
             AccountInfo account = new AccountInfo();
 
-            account = AccountQuery.getCustomerAccount(id_owner, Convert.ToInt32(account_id));
+            account = AccountQuery.getCustomerAccount(account_id, id_owner);
 
             label2.Text = account.account_name;
-            label4.Text = account.id_account.ToString();
-            if (account.account_type == 1) label6.Text = "Ahorro";
+            label4.Text = account.account_number;
+            if (account.account_type == '1') label6.Text = "Ahorro";
             else label6.Text = "Corriente";
-            label8.Text = account.account_amount.ToString();
+            label8.Text = "$ " + account.account_amount.ToString();
         }
     }
 }

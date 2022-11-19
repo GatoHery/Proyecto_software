@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.CompilerServices;
 
 namespace Banco
 {
@@ -26,45 +27,43 @@ namespace Banco
 
         private void button2_Click(object sender, EventArgs e)
         {
-            bool flag = false;
-            List<AccountInfo> accountsList = AccountQuery.getAllAccounts();
-
             try
             {
-                foreach (var a in accountsList)
+                string response = AccountQuery.checkCustomerAccount(textBox1.Text);
+                if (textBox2.Text.Equals(response))
                 {
-                    if (textBox1.Text.Equals(a.id_account.ToString()) && textBox2.Text.Equals(a.id_owner))
-                    {
-                        Transaction t = new Transaction();
-                        //t.date = DateTime.Now;
-                        t.transaction_amount = Convert.ToDouble(textBox3.Text);
-                        t.account_id = Convert.ToInt32(textBox1.Text);
-                        t.transaction_type = 1;
+                    AccountInfo account = AccountQuery.getCustomerAccount(textBox1.Text, textBox2.Text);
 
-                        TransactionQuery.newTransaction(t);
+                    Transaction t = new Transaction();
+                    t.account_number = textBox1.Text;
+                    t.transaction_amount = Convert.ToDouble(textBox3.Text);
+                    //t.transaction_comment = textBox4.Text; // TODO
+                    t.transaction_type = '2';
 
-                        AccountInfo acc = new AccountInfo();
-                        acc = AccountQuery.getCustomerAccount(a.id_owner, a.id_account);
+                    TransactionQuery.newTransaction(t);
 
-                        double balance = acc.account_amount;
-                        balance += Convert.ToDouble(textBox3.Text);
+                    double balance = account.account_amount;
+                    balance += Convert.ToDouble(textBox3.Text);
 
-                        MessageBox.Show("Se ha aplicado un abono por\n$" + textBox3.Text);
+                    MessageBox.Show("Se ha aplicado un abono por\n$" + textBox3.Text);
 
-                        AccountQuery.updateAccountBalance(balance, acc);
+                    AccountQuery.updateAccountBalance(balance, account);
 
-                        textBox1.Text = " ";
-                        textBox2.Text = " ";
-                        textBox3.Text = " ";
-
-
-
-                        flag = true;
-                        break;
-                    }
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                    textBox3.Text = "";
                 }
+                else throw new IndexOutOfRangeException();
 
-                if (!flag) MessageBox.Show("No se encontró la cuenta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //if (!flag) MessageBox.Show("No se encontró la cuenta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                MessageBox.Show("No se encontró la cuenta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (RuntimeWrappedException ex)
+            {
+                MessageBox.Show("No se encontró la cuenta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
