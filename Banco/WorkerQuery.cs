@@ -6,7 +6,7 @@ namespace Banco{
     public static class WorkerQuery{
         public static List<Worker> getWorkers()
         {
-            var dt = Connection.ExecuteQuery($"SELECT * FROM worker");
+            var dt = Connection.ExecuteQuery($"SELECT * FROM workers");
             List<Worker> allWorkers = new List<Worker>();
 
             foreach (DataRow n in dt.Rows)
@@ -24,6 +24,14 @@ namespace Banco{
 
 
             return allWorkers;
+        }
+
+        public static string getWorker(string username){
+            var dt = Connection.ExecuteQuery($"SELECT password FROM workers WHERE username = '{username}'");
+            DataRow n = dt.Rows[0];
+            string pass = n[0].ToString();
+
+            return pass;
         }
     }
 }
