@@ -1,0 +1,108 @@
+-Script Creación de data base: 
+
+CREATE DATABASE d8jer75chm83c8
+    WITH
+    OWNER = ekmglxqofosynw
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'en_US.UTF-8'
+    LC_CTYPE = 'en_US.UTF-8'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
+ALTER DATABASE d8jer75chm83c8
+    SET search_path TO "$user", public, heroku_ext;
+
+GRANT ALL ON DATABASE d8jer75chm83c8 TO ekmglxqofosynw;
+
+
+-Script Creación de tabla users:
+
+CREATE TABLE IF NOT EXISTS public.users
+(
+    "ID" character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    name character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    password character varying(30) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT users_pkey PRIMARY KEY ("ID")
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.users
+    OWNER to postgres;
+
+-Script Creación tabla bank account:
+
+CREATE TABLE IF NOT EXISTS public.bank_account
+(
+    account_number character varying(40) COLLATE pg_catalog."default" NOT NULL,
+    id character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    money_amount money NOT NULL,
+    CONSTRAINT bank_account_pkey PRIMARY KEY (account_number),
+    CONSTRAINT bank_account_ref_userid_fk FOREIGN KEY (id)
+        REFERENCES public.users ("ID") MATCH SIMPLE
+        ON UPDATE RESTRICT
+        ON DELETE RESTRICT
+        NOT VALID,
+    CONSTRAINT bank_account_ref_userid_fk1 FOREIGN KEY (id)
+        REFERENCES public.users ("ID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.bank_account
+    OWNER to postgres;
+
+-Script Creación tabla transactions: 
+
+CREATE TABLE IF NOT EXISTS public.transactions
+(
+    transaction_number bigint NOT NULL DEFAULT nextval('transactions_transaction_number_seq'::regclass),
+    account_send character varying(40) COLLATE pg_catalog."default",
+    account_receives character varying(40) COLLATE pg_catalog."default",
+    amount bigint NOT NULL,
+    comment character varying(140) COLLATE pg_catalog."default",
+    reason character varying(140) COLLATE pg_catalog."default",
+    date date NOT NULL,
+    hour timestamp without time zone NOT NULL,
+    CONSTRAINT transactions_pkey PRIMARY KEY (transaction_number),
+    CONSTRAINT fk_account_recieves FOREIGN KEY (account_receives)
+        REFERENCES public.bank_account (account_number) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT fk_account_send FOREIGN KEY (account_send)
+        REFERENCES public.bank_account (account_number) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.transactions
+    OWNER to ekmglxqofosynw;
+
+COMMENT ON TABLE public.transactions
+    IS 'all transactions of the bank';
+
+-Script Creación tabla workers: 
+
+CREATE TABLE IF NOT EXISTS public.workers
+(
+    worker_id integer NOT NULL DEFAULT nextval('workers_worker_id_seq'::regclass),
+    fullname character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    username character varying(20) COLLATE pg_catalog."default" NOT NULL,
+    email character varying(30) COLLATE pg_catalog."default" NOT NULL,
+    password character varying(30) COLLATE pg_catalog."default" NOT NULL,
+    is_admin boolean NOT NULL,
+    CONSTRAINT pk_worker PRIMARY KEY (worker_id),
+    CONSTRAINT workers_email_key UNIQUE (email),
+    CONSTRAINT workers_username_key UNIQUE (username)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.workers
+    OWNER to ekmglxqofosynw;
+
