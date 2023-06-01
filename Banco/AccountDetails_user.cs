@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Banco
 {
-    public partial class AccountDetails : Form
+    public partial class AccountDetails_user : Form
     {
-        public AccountDetails(string id_owner, string account_id)
+        public AccountDetails_user(string id_owner, string account_id)
         {
             InitializeComponent();
-
             showInfo(id_owner, account_id);
         }
 
@@ -37,7 +36,7 @@ namespace Banco
             label8.Text = "$ " + account.account_amount.ToString();
         }
 
-        private void AccountDetails_Load(object sender, EventArgs e)
+        private void AccountDetails_user_Load(object sender, EventArgs e)
         {
 
         }

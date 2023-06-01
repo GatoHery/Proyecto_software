@@ -56,5 +56,10 @@ namespace Banco
             Register register = new Register();
             register.ShowDialog();
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

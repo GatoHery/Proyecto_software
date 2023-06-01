@@ -26,7 +26,11 @@ namespace Banco
                 //bool flag = true;
                 try
                 {
-                    string response = WorkerQuery.getWorker(textBox1.Text);
+                    menu_usuario usuario = new menu_usuario(this);
+                    usuario.Show();
+                    this.Hide();
+                    /*
+                     string response = WorkerQuery.getWorker(textBox1.Text);
                     if (textBox2.Text.Equals(response))
                     {
                         textBox1.Text = "";
@@ -36,8 +40,9 @@ namespace Banco
                         this.Hide();
                     }
                     else MessageBox.Show("Credenciales incorrectas");
+                     */
                 }
-                catch(IndexOutOfRangeException ex){
+                catch (IndexOutOfRangeException ex){
                     MessageBox.Show("No se encontró el usuario", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)

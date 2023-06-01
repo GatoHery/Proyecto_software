@@ -7,6 +7,10 @@ namespace Banco{
         public string username { get; set; }
         public string email { get; set; }
         public string password { get; set; }
-        
+
+        internal void Show()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

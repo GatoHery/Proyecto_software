@@ -89,3 +89,22 @@ C:\Users\denny\Desktop\ProyectoSoftware\Proyecto_software\Banco\bin\Debug\net6.0
 C:\Users\denny\Desktop\ProyectoSoftware\Proyecto_software\Banco\bin\Debug\net6.0-windows\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\denny\Desktop\ProyectoSoftware\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.csproj.CopyComplete
 C:\Users\denny\Desktop\ProyectoSoftware\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.AccountDetails.resources
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\bin\Debug\net6.0-windows\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.AccountDetails.resources
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.csproj.CopyComplete
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.menu_usuario.resources
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.AccountDetails_user.resources
+C:\Users\yoshi\OneDrive\Bloc de notas\GitHub\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.Transferencia.resources

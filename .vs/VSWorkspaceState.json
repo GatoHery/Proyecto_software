@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Banco"
   ],
-  "SelectedNode": "\\Banco.sln",
+  "SelectedNode": "\\Banco\\menu_usuario.cs",
   "PreviewInSolutionExplorer": false
 }

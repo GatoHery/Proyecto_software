@@ -717,24 +717,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\denny\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\yoshi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\denny\\Desktop\\ProyectoSoftware\\Proyecto_software\\Banco\\Banco.csproj",
+      "projectUniqueName": "C:\\Users\\yoshi\\OneDrive\\Bloc de notas\\GitHub\\Proyecto_software\\Banco\\Banco.csproj",
       "projectName": "Banco",
-      "projectPath": "C:\\Users\\denny\\Desktop\\ProyectoSoftware\\Proyecto_software\\Banco\\Banco.csproj",
-      "packagesPath": "C:\\Users\\denny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\denny\\Desktop\\ProyectoSoftware\\Proyecto_software\\Banco\\obj\\",
+      "projectPath": "C:\\Users\\yoshi\\OneDrive\\Bloc de notas\\GitHub\\Proyecto_software\\Banco\\Banco.csproj",
+      "packagesPath": "C:\\Users\\yoshi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yoshi\\OneDrive\\Bloc de notas\\GitHub\\Proyecto_software\\Banco\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\denny\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\yoshi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -784,7 +779,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

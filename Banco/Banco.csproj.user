@@ -4,10 +4,19 @@
     <Compile Update="AccountDetails.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="AccountDetails_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Deposit_money.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Transferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="menu_usuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Remove_money.cs">
