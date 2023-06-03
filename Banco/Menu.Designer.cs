@@ -73,7 +73,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(215, 268);
+            button2.Location = new Point(215, 266);
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
             button2.Size = new Size(342, 31);
@@ -84,7 +84,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(215, 321);
+            button3.Location = new Point(215, 316);
             button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
             button3.Size = new Size(342, 31);
@@ -96,18 +96,18 @@
             // button4
             // 
             button4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.Location = new Point(285, 457);
+            button4.Location = new Point(285, 466);
             button4.Margin = new Padding(3, 4, 3, 4);
             button4.Name = "button4";
             button4.Size = new Size(201, 39);
-            button4.TabIndex = 10;
+            button4.TabIndex = 12;
             button4.Text = "Cerrar sesión";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
             // button5
             // 
-            button5.Location = new Point(215, 379);
+            button5.Location = new Point(215, 416);
             button5.Margin = new Padding(3, 4, 3, 4);
             button5.Name = "button5";
             button5.Size = new Size(342, 31);
@@ -118,11 +118,11 @@
             //
             // button 6
             //
-            button6.Location = new Point(215, 419);
+            button6.Location = new Point(215, 366);
             button6.Margin = new Padding(3, 4, 3, 4);
             button6.Name = "button6";
             button6.Size = new Size(342, 31);
-            button6.TabIndex = 12;
+            button6.TabIndex = 10;
             button6.Text = "Transferir fondos";
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
@@ -131,7 +131,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 539);
+            ClientSize = new Size(800, 559);
             ControlBox = false;
             Controls.Add(button6);
             Controls.Add(button5);

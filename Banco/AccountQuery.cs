@@ -39,6 +39,23 @@ namespace Banco
 
             return account;
         }
+        
+        public static AccountInfo GetCustomerAccountByName(string account_number, string customer_fullname)
+        {
+            var dt = Connection.ExecuteQuery($"SELECT b.*, c.customer_fullname FROM bank_account b, customers c WHERE b.account_number = '{account_number}' AND c.customer_fullname = '{customer_fullname}'");
+
+            AccountInfo account = new AccountInfo();
+
+            DataRow n = dt.Rows[0];
+
+            account.account_number = n[0].ToString(); // ID cuenta
+            account.account_name = n[1].ToString(); // Nombre de la cuenta (dueño)
+            account.id_owner = n[2].ToString(); // ID dueño de la cuenta
+            account.account_amount = Convert.ToDouble(n[3].ToString()); // Balance de la cuenta
+            account.account_type = Convert.ToChar(n[4].ToString()); // Tipo de cuenta
+
+            return account;
+        }
 
         public static string CheckCustomerAccount(string account_number)
         {
