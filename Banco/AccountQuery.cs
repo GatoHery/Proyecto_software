@@ -40,7 +40,7 @@ namespace Banco
             return account;
         }
 
-        public static string checkCustomerAccount(string account_number)
+        public static string CheckCustomerAccount(string account_number)
         {
             var dt = Connection.ExecuteQuery($"SELECT customer_id FROM bank_account WHERE account_number = '{account_number}'");
 

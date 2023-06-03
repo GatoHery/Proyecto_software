@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Banco
 {
-    public partial class Transferencia : Form
+    public partial class MenuTransfer : Form
     {
-        public Transferencia()
+        public MenuTransfer()
         {
             InitializeComponent();
         }

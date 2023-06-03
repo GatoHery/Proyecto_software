@@ -29,7 +29,7 @@ namespace Banco
         {
             try
             {
-                string response = AccountQuery.checkCustomerAccount(textBox1.Text);
+                string response = AccountQuery.CheckCustomerAccount(textBox1.Text);
                 if (textBox2.Text.Equals(response))
                 {
                     AccountInfo account = AccountQuery.getCustomerAccount(textBox1.Text, textBox2.Text);

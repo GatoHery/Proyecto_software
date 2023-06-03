@@ -32,6 +32,10 @@ namespace Banco
             {
                 MessageBox.Show("Hay campos vacíos");
             }
+            else if (textBox2.Text.Length != 9)
+            {
+                MessageBox.Show("Por favor, compruebe el DUI");
+            }
             else if (!radioButton1.Checked && !radioButton2.Checked)
                 MessageBox.Show("Por favor, elija un tipo de cuenta", "Cuenta no especificada", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
@@ -77,6 +81,7 @@ namespace Banco
                     MessageBox.Show("Se creó la cuenta con el número:\n" + newAccount.account_number, "Cuenta creada", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     MessageBox.Show("Cuenta creada.\nRegresará al menú principal.");
+                    this.Close();
                 }
                 catch (Exception ex)
                 {

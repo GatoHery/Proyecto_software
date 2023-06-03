@@ -8,9 +8,9 @@ namespace Banco{
         public string email { get; set; }
         public string password { get; set; }
 
-        internal void Show()
+        /*internal void Show()
         {
             throw new NotImplementedException();
-        }
+        }*/
     }
 }

@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yoshi\\OneDrive\\Bloc de notas\\GitHub\\Proyecto_software\\Banco\\Banco.csproj": {}
+    "C:\\Users\\denny\\Desktop\\ACA-proyecto\\Proyecto_software\\Banco\\Banco.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yoshi\\OneDrive\\Bloc de notas\\GitHub\\Proyecto_software\\Banco\\Banco.csproj": {
+    "C:\\Users\\denny\\Desktop\\ACA-proyecto\\Proyecto_software\\Banco\\Banco.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yoshi\\OneDrive\\Bloc de notas\\GitHub\\Proyecto_software\\Banco\\Banco.csproj",
+        "projectUniqueName": "C:\\Users\\denny\\Desktop\\ACA-proyecto\\Proyecto_software\\Banco\\Banco.csproj",
         "projectName": "Banco",
-        "projectPath": "C:\\Users\\yoshi\\OneDrive\\Bloc de notas\\GitHub\\Proyecto_software\\Banco\\Banco.csproj",
-        "packagesPath": "C:\\Users\\yoshi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yoshi\\OneDrive\\Bloc de notas\\GitHub\\Proyecto_software\\Banco\\obj\\",
+        "projectPath": "C:\\Users\\denny\\Desktop\\ACA-proyecto\\Proyecto_software\\Banco\\Banco.csproj",
+        "packagesPath": "C:\\Users\\denny\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denny\\Desktop\\ACA-proyecto\\Proyecto_software\\Banco\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yoshi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\denny\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -56,6 +54,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -64,7 +80,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

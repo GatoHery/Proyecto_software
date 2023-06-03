@@ -3,10 +3,10 @@ using Npgsql;
 
 namespace Banco{
     public static class Connection {
-        private static string host = "ec2-52-1-17-228.compute-1.amazonaws.com",
-            database = "d8jer75chm83c8",
-            userId = "ekmglxqofosynw",
-            password = "70887c7e0cf650cbdc89fafa5d0e36b95ab089bc4c6dfd3637f316de9e8e3be0";
+        private static string host = "localhost",
+            database = "BBBank",
+            userId = "postgres",
+            password = "1234";
 
         private static string sConnection =
             $"Server={host};Port=5432;User Id={userId};Password={password};Database={database};";

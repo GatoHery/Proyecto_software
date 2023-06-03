@@ -27,7 +27,7 @@ namespace Banco{
         }
 
         public static string getWorker(string username){
-            var dt = Connection.ExecuteQuery($"SELECT password FROM workers WHERE username = '{username}'");
+            var dt = Connection.ExecuteQuery($"SELECT worker_password FROM workers WHERE worker_username = '{username}'");
             DataRow n = dt.Rows[0];
             string pass = n[0].ToString();
 

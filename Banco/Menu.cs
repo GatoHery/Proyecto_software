@@ -57,9 +57,15 @@ namespace Banco
             register.ShowDialog();
         }
 
-        private void Menu_Load(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
+        {
+            MenuTransfer menuTransfer = new MenuTransfer();
+            menuTransfer.ShowDialog();
+        }
+
+        /*private void Menu_Load(object sender, EventArgs e)
         {
 
-        }
+        }*/
     }
 }

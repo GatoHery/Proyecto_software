@@ -10,10 +10,10 @@ namespace Banco
             button1.BackColor = Color.FromArgb(112, 195, 223);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        /*private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
+        }*/
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -26,11 +26,12 @@ namespace Banco
                 //bool flag = true;
                 try
                 {
+                /*
                     menu_usuario usuario = new menu_usuario(this);
                     usuario.Show();
                     this.Hide();
-                    /*
-                     string response = WorkerQuery.getWorker(textBox1.Text);
+                    */
+                    string response = WorkerQuery.getWorker(textBox1.Text);
                     if (textBox2.Text.Equals(response))
                     {
                         textBox1.Text = "";
@@ -40,14 +41,13 @@ namespace Banco
                         this.Hide();
                     }
                     else MessageBox.Show("Credenciales incorrectas");
-                     */
                 }
                 catch (IndexOutOfRangeException ex){
                     MessageBox.Show("No se encontró el usuario", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Ocurrió un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Ocurrió un error" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
 

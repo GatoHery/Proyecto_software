@@ -35,6 +35,7 @@
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -114,6 +115,17 @@
             button5.Text = "Registrar nuevo cliente";
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
+            //
+            // button 6
+            //
+            button6.Location = new Point(215, 419);
+            button6.Margin = new Padding(3, 4, 3, 4);
+            button6.Name = "button6";
+            button6.Size = new Size(342, 31);
+            button6.TabIndex = 12;
+            button6.Text = "Transferir fondos";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // Menu
             // 
@@ -121,6 +133,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 539);
             ControlBox = false;
+            Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -134,7 +147,7 @@
             Name = "Menu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Menu principal";
-            Load += Menu_Load;
+            //Load += Menu_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -149,5 +162,6 @@
         private Button button3;
         private Button button4;
         private Button button5;
+        private Button button6;
     }
 }

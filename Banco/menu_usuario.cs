@@ -32,7 +32,7 @@ namespace Banco
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Transferencia money = new Transferencia();
+            MenuTransfer money = new MenuTransfer();
             money.ShowDialog();
         }
 
@@ -44,8 +44,8 @@ namespace Banco
 
         private void button3_Click(object sender, EventArgs e)
         {
-            AccountDetails_user details = new AccountDetails_user();
-            details.ShowDialog();
+            //AccountDetails_user details = new AccountDetails_user();
+            //details.ShowDialog();
         }
     }
 }
