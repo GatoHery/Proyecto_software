@@ -1,9 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using Banco.Models;
 
-namespace Banco{
-    public static class WorkerQuery{
+namespace Banco.Queries
+{
+    public static class WorkerQuery
+    {
         public static List<Worker> getWorkers()
         {
             var dt = Connection.ExecuteQuery($"SELECT * FROM workers");
@@ -12,7 +15,7 @@ namespace Banco{
             foreach (DataRow n in dt.Rows)
             {
                 Worker w = new Worker();
-                
+
                 w.id_worker = n[0].ToString();
                 w.name = n[1].ToString();
                 w.username = n[2].ToString();
@@ -26,12 +29,22 @@ namespace Banco{
             return allWorkers;
         }
 
-        public static string getWorker(string username){
+        public static string getWorker(string username)
+        {
             var dt = Connection.ExecuteQuery($"SELECT worker_password FROM workers WHERE worker_username = '{username}'");
             DataRow n = dt.Rows[0];
             string pass = n[0].ToString();
 
             return pass;
+        }
+
+        public static string GetWorkerPosition(string username)
+        {
+            var dt = Connection.ExecuteQuery($"SELECT worker_position FROM workers WHERE worker_username = '{username}'");
+            DataRow n = dt.Rows[0];
+            string position = n[0].ToString();
+
+            return position;
         }
     }
 }

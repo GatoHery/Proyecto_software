@@ -1,7 +1,9 @@
 using System;
 
-namespace Banco{
-    public class Worker{
+namespace Banco.Models
+{
+    public class Worker
+    {
         public string id_worker { get; set; }
         public string name { get; set; }
         public string username { get; set; }

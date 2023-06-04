@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.CompilerServices;
+using Banco.Queries;
+using Banco.Models;
 
 namespace Banco
 {
-    public partial class Remove_money : Form
+    public partial class Deposit_money : Form
     {
-        public Remove_money()
+        public Deposit_money()
         {
             InitializeComponent();
             textBox1.BackColor = Color.FromArgb(222, 234, 238);
@@ -38,14 +40,14 @@ namespace Banco
                     t.account_number = textBox1.Text;
                     t.transaction_amount = Convert.ToDouble(textBox3.Text);
                     //t.transaction_comment = textBox4.Text; // TODO
-                    t.transaction_type = '1';
+                    t.transaction_type = '2';
 
                     TransactionQuery.newTransaction(t);
 
                     double balance = account.account_amount;
-                    balance -= Convert.ToDouble(textBox3.Text);
+                    balance += Convert.ToDouble(textBox3.Text);
 
-                    MessageBox.Show("Se retiró la cantidad de\n$" + textBox3.Text);
+                    MessageBox.Show("Se ha aplicado un abono por\n$" + textBox3.Text);
 
                     AccountQuery.updateAccountBalance(balance, account);
 

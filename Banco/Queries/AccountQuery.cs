@@ -1,7 +1,8 @@
 using System;
 using System.Data;
+using Banco.Models;
 
-namespace Banco
+namespace Banco.Queries
 {
     public static class AccountQuery
     {
@@ -39,7 +40,7 @@ namespace Banco
 
             return account;
         }
-        
+
         public static AccountInfo GetCustomerAccountByName(string account_number, string customer_fullname)
         {
             var dt = Connection.ExecuteQuery($"SELECT b.*, c.customer_fullname FROM bank_account b, customers c WHERE b.account_number = '{account_number}' AND c.customer_fullname = '{customer_fullname}'");

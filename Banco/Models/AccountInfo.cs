@@ -1,6 +1,6 @@
 using System;
 
-namespace Banco
+namespace Banco.Models
 {
     public class AccountInfo
     {

@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using Banco.Models;
 
-namespace Banco
+namespace Banco.Queries
 {
     public static class UserQuery
     {

@@ -1,7 +1,9 @@
 using System;
 
-namespace Banco{
-    public class Transaction{
+namespace Banco.Models
+{
+    public class Transaction
+    {
         public string transaction_number { get; set; }
         public string account_number { get; set; }
         public double transaction_amount { get; set; }

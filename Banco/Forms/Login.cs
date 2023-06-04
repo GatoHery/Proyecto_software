@@ -1,3 +1,6 @@
+using Banco.Forms;
+using Banco.Queries;
+
 namespace Banco
 {
     public partial class Login : Form
@@ -26,23 +29,37 @@ namespace Banco
                 //bool flag = true;
                 try
                 {
-                /*
-                    menu_usuario usuario = new menu_usuario(this);
-                    usuario.Show();
-                    this.Hide();
-                    */
+                    /*
+                        menu_usuario usuario = new menu_usuario(this);
+                        usuario.Show();
+                        this.Hide();
+                        */
                     string response = WorkerQuery.getWorker(textBox1.Text);
+                    string position = WorkerQuery.GetWorkerPosition(textBox1.Text);
+
                     if (textBox2.Text.Equals(response))
                     {
                         textBox1.Text = "";
                         textBox2.Text = "";
-                        Menu menu = new Menu(this);
-                        menu.Show();
-                        this.Hide();
+
+                        switch (position)
+                        {
+                            case "Ventanilla":
+                                Menu menu = new Menu(this);
+                                menu.Show();
+                                this.Hide();
+                                break;
+                            case "Asesorseguros":
+                                FormCarInsuranceRequest insuranceMenu = new FormCarInsuranceRequest(this);
+                                insuranceMenu.Show();
+                                this.Hide();
+                                break;
+                        }
                     }
                     else MessageBox.Show("Credenciales incorrectas");
                 }
-                catch (IndexOutOfRangeException ex){
+                catch (IndexOutOfRangeException ex)
+                {
                     MessageBox.Show("No se encontró el usuario", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)

@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Security.Cryptography;
 using System.Security;
+using Banco.Queries;
+using Banco.Models;
 
 namespace Banco
 {
@@ -50,17 +52,18 @@ namespace Banco
                     newUser.password = textBox5.Text;
 
                     AccountInfo newAccount = new AccountInfo();
-                    newAccount.account_name = newUser.name;
 
                     if (radioButton1.Checked)
                     {
                         newAccount.account_type = '1';
                         str = "10";
+                        newAccount.account_name = newUser.name + " Ahorro";
                     }
                     if (radioButton2.Checked)
                     {
                         newAccount.account_type = '2';
                         str = "20";
+                        newAccount.account_name = newUser.name + " Corriente";
                     }
                     newAccount.account_amount = 0.0;
                     newAccount.id_owner = newUser.id_user;
