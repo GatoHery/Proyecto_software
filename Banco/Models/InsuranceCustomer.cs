@@ -12,6 +12,6 @@ namespace Banco.Models
         public string Address { get; set; }
         public string Employment { get; set; }
         public float Earnings { get; set; }
-        public bool hasLicense { get; set; }
+        public bool HasLicense { get; set; }
     }
 }
