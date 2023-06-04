@@ -1,5 +1,3 @@
-using System;
-using System.Data;
 using Banco.Models;
 
 namespace Banco.Queries
@@ -13,8 +11,8 @@ namespace Banco.Queries
                                        $"{t.transaction_amount}," +
                                        $"'{t.transaction_comment}'," +
                                        $"'{t.transaction_type}'," +
-                                       $"CURRENT_TIMESTAMP," +
-                                       $"CURRENT_TIMESTAMP)");
+                                       $"CURRENT_DATE," +
+                                       $"CURRENT_TIME)");
         }
     }
 }

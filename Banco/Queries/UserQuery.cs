@@ -31,11 +31,12 @@ namespace Banco.Queries
 
         public static void registerUser(User newUser)
         {
-            Connection.ExecuteNonQuery($"INSERT INTO customers(customer_id, customer_fullname, customer_username, customer_email, customer_password) " +
+            Connection.ExecuteNonQuery($"INSERT INTO customers(customer_id, customer_fullname, customer_username, customer_email, customer_phone, customer_password) " +
                                         $"VALUES('{newUser.id_user}'," +
                                         $" '{newUser.name}'," +
                                         $"'{newUser.username}'," +
                                         $"'{newUser.email}'," +
+                                        $"'{newUser.phone}'," +
                                         $"'{newUser.password}')");
         }
     }

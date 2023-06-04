@@ -62,7 +62,11 @@
             textBox12 = new TextBox();
             button1 = new Button();
             button2 = new Button();
+            groupBox1 = new GroupBox();
+            radioButton2 = new RadioButton();
+            radioButton1 = new RadioButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // pictureBox1
@@ -213,7 +217,7 @@
             label14.Name = "label14";
             label14.Size = new Size(146, 25);
             label14.TabIndex = 15;
-            label14.Text = "Placa (si aplica):";
+            label14.Text = "Placa:";
             // 
             // label15
             // 
@@ -223,7 +227,7 @@
             label15.Name = "label15";
             label15.Size = new Size(132, 25);
             label15.TabIndex = 16;
-            label15.Text = "VIN (si aplica):";
+            label15.Text = "VIN:";
             // 
             // label16
             // 
@@ -361,7 +365,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(556, 533);
+            button1.Location = new Point(559, 593);
             button1.Name = "button1";
             button1.Size = new Size(167, 23);
             button1.TabIndex = 33;
@@ -371,7 +375,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(210, 533);
+            button2.Location = new Point(197, 593);
             button2.Name = "button2";
             button2.Size = new Size(167, 23);
             button2.TabIndex = 34;
@@ -379,12 +383,47 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(radioButton2);
+            groupBox1.Controls.Add(radioButton1);
+            groupBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            groupBox1.Location = new Point(12, 506);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(396, 55);
+            groupBox1.TabIndex = 35;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Cuenta con licencia de conducir vigente:";
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Location = new Point(244, 22);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(47, 24);
+            radioButton2.TabIndex = 1;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "No";
+            radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Location = new Point(94, 22);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(39, 24);
+            radioButton1.TabIndex = 0;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "Sí";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
             // FormCarInsuranceRequest
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(917, 568);
+            ClientSize = new Size(917, 628);
             ControlBox = false;
+            Controls.Add(groupBox1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox12);
@@ -425,6 +464,8 @@
             ShowIcon = false;
             Text = "Solicitud de seguro de vehículo";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -465,5 +506,8 @@
         private TextBox textBox12;
         private Button button1;
         private Button button2;
+        private GroupBox groupBox1;
+        private RadioButton radioButton2;
+        private RadioButton radioButton1;
     }
 }
