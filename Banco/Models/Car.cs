@@ -10,7 +10,7 @@ namespace Banco.Models
         public string Plate { get; set; }
         public string Vin { get; set; }
         public string Usage { get; set; }
-        public float Value { get; set; }
+        public decimal Value { get; set; }
         public string IssuedToId { get; set; }
         public bool IsApproved { get; set; }
     }

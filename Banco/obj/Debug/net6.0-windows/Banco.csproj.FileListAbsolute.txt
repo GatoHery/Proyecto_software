@@ -153,3 +153,5 @@ C:\Users\denny\Desktop\ACA-proyecto\Proyecto_software\Banco\obj\Debug\net6.0-win
 C:\Users\denny\Desktop\ACA-proyecto\Proyecto_software\Banco\obj\Debug\net6.0-windows\ref\Banco.dll
 C:\Users\denny\Desktop\ACA-proyecto\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.MenuTransfer.resources
 C:\Users\denny\Desktop\ACA-proyecto\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.Forms.FormCarInsuranceRequest.resources
+C:\Users\denny\Desktop\ACA-proyecto\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.Forms.MenuInsuranceRequests.resources
+C:\Users\denny\Desktop\ACA-proyecto\Proyecto_software\Banco\obj\Debug\net6.0-windows\Banco.Forms.VehicleInsuranceRequestInfo.resources

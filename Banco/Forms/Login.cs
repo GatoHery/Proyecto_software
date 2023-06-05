@@ -50,7 +50,12 @@ namespace Banco
                                 this.Hide();
                                 break;
                             case "Asesorseguros":
-                                FormCarInsuranceRequest insuranceMenu = new FormCarInsuranceRequest(this);
+                                FormCarInsuranceRequest insuranceRequest = new FormCarInsuranceRequest(this);
+                                insuranceRequest.Show();
+                                this.Hide();
+                                break;
+                            case "Ejecusolicitud":
+                                MenuInsuranceRequests insuranceMenu = new MenuInsuranceRequests(this);
                                 insuranceMenu.Show();
                                 this.Hide();
                                 break;

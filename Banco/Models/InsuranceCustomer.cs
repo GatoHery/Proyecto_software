@@ -11,7 +11,7 @@ namespace Banco.Models
         public string Password { get; set; }
         public string Address { get; set; }
         public string Employment { get; set; }
-        public float Earnings { get; set; }
+        public decimal Earnings { get; set; }
         public bool HasLicense { get; set; }
     }
 }
