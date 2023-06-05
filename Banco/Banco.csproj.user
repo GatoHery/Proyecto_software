@@ -16,7 +16,13 @@
     <Compile Update="Forms\FormCarInsuranceRequest.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\MenuInsuranceRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\MenuTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\VehicleInsuranceRequestInfo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="menu_usuario.cs">

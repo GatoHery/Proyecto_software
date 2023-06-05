@@ -79,7 +79,7 @@ namespace Banco.Forms
                     customer.Phone = textBox4.Text;
                     customer.Address = textBox5.Text;
                     customer.Employment = comboBox1.Text;
-                    customer.Earnings = float.Parse(textBox6.Text);
+                    customer.Earnings = Convert.ToDecimal(textBox6.Text);
                     customer.HasLicense = radioButton1.Checked;
 
                     car.Make = textBox7.Text;
@@ -88,7 +88,7 @@ namespace Banco.Forms
                     car.Plate = textBox10.Text;
                     car.Vin = textBox11.Text;
                     car.Usage = comboBox2.Text;
-                    car.Value = float.Parse(textBox12.Text);
+                    car.Value = Convert.ToDecimal(textBox12.Text);
                     car.IssuedToId = textBox2.Text;
                     car.IsApproved = false;
 
