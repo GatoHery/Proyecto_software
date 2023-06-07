@@ -71,7 +71,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.Bitcoin_svg;
+            pictureBox1.Image = Properties.Resources.Blue_Illustration_Money_Talk_Podcast_Logo_removebg_preview;
             pictureBox1.Location = new Point(426, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(109, 88);
@@ -215,7 +215,7 @@
             label14.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label14.Location = new Point(509, 337);
             label14.Name = "label14";
-            label14.Size = new Size(146, 25);
+            label14.Size = new Size(61, 25);
             label14.TabIndex = 15;
             label14.Text = "Placa:";
             // 
@@ -225,7 +225,7 @@
             label15.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label15.Location = new Point(509, 379);
             label15.Name = "label15";
-            label15.Size = new Size(132, 25);
+            label15.Size = new Size(47, 25);
             label15.TabIndex = 16;
             label15.Text = "VIN:";
             // 

@@ -40,7 +40,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.Bitcoin_svg;
+            pictureBox1.Image = Properties.Resources.Blue_Illustration_Money_Talk_Podcast_Logo_removebg_preview;
             pictureBox1.Location = new Point(287, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(109, 88);

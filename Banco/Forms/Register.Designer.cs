@@ -53,7 +53,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.Bitcoin_svg;
+            pictureBox1.Image = Properties.Resources.Blue_Illustration_Money_Talk_Podcast_Logo_removebg_preview;
             pictureBox1.Location = new Point(283, 16);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(109, 88);
@@ -107,7 +107,7 @@
             label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label5.Location = new Point(35, 284);
             label5.Name = "label5";
-            label5.Size = new Size(74, 25);
+            label5.Size = new Size(173, 25);
             label5.TabIndex = 5;
             label5.Text = "Correo electrónico:";
             // 
@@ -127,7 +127,7 @@
             label7.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label7.Location = new Point(35, 368);
             label7.Name = "label7";
-            label7.Size = new Size(112, 25);
+            label7.Size = new Size(192, 25);
             label7.TabIndex = 7;
             label7.Text = "Teléfono de contacto:";
             // 

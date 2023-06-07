@@ -41,11 +41,10 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.Bitcoin_svg;
-            pictureBox1.Location = new Point(323, 21);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Image = Properties.Resources.Blue_Illustration_Money_Talk_Podcast_Logo_removebg_preview;
+            pictureBox1.Location = new Point(283, 16);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(125, 117);
+            pictureBox1.Size = new Size(109, 88);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -54,18 +53,17 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(314, 155);
+            label1.Location = new Point(275, 116);
             label1.Name = "label1";
-            label1.Size = new Size(175, 32);
+            label1.Size = new Size(140, 25);
             label1.TabIndex = 1;
             label1.Text = "Menu principal";
             // 
             // button1
             // 
-            button1.Location = new Point(215, 216);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Location = new Point(188, 162);
             button1.Name = "button1";
-            button1.Size = new Size(342, 31);
+            button1.Size = new Size(299, 23);
             button1.TabIndex = 7;
             button1.Text = "Depositar dinero";
             button1.UseVisualStyleBackColor = true;
@@ -73,10 +71,9 @@
             // 
             // button2
             // 
-            button2.Location = new Point(215, 266);
-            button2.Margin = new Padding(3, 4, 3, 4);
+            button2.Location = new Point(188, 200);
             button2.Name = "button2";
-            button2.Size = new Size(342, 31);
+            button2.Size = new Size(299, 23);
             button2.TabIndex = 8;
             button2.Text = "Retirar dinero";
             button2.UseVisualStyleBackColor = true;
@@ -84,10 +81,9 @@
             // 
             // button3
             // 
-            button3.Location = new Point(215, 316);
-            button3.Margin = new Padding(3, 4, 3, 4);
+            button3.Location = new Point(188, 237);
             button3.Name = "button3";
-            button3.Size = new Size(342, 31);
+            button3.Size = new Size(299, 23);
             button3.TabIndex = 9;
             button3.Text = "Comprobar estado de cuenta";
             button3.UseVisualStyleBackColor = true;
@@ -96,10 +92,9 @@
             // button4
             // 
             button4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.Location = new Point(285, 466);
-            button4.Margin = new Padding(3, 4, 3, 4);
+            button4.Location = new Point(249, 350);
             button4.Name = "button4";
-            button4.Size = new Size(201, 39);
+            button4.Size = new Size(176, 29);
             button4.TabIndex = 12;
             button4.Text = "Cerrar sesión";
             button4.UseVisualStyleBackColor = true;
@@ -107,21 +102,19 @@
             // 
             // button5
             // 
-            button5.Location = new Point(215, 416);
-            button5.Margin = new Padding(3, 4, 3, 4);
+            button5.Location = new Point(188, 312);
             button5.Name = "button5";
-            button5.Size = new Size(342, 31);
+            button5.Size = new Size(299, 23);
             button5.TabIndex = 11;
             button5.Text = "Registrar nuevo cliente";
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
-            //
-            // button 6
-            //
-            button6.Location = new Point(215, 366);
-            button6.Margin = new Padding(3, 4, 3, 4);
+            // 
+            // button6
+            // 
+            button6.Location = new Point(188, 274);
             button6.Name = "button6";
-            button6.Size = new Size(342, 31);
+            button6.Size = new Size(299, 23);
             button6.TabIndex = 10;
             button6.Text = "Transferir fondos";
             button6.UseVisualStyleBackColor = true;
@@ -129,9 +122,9 @@
             // 
             // Menu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 559);
+            ClientSize = new Size(700, 419);
             ControlBox = false;
             Controls.Add(button6);
             Controls.Add(button5);
@@ -143,11 +136,9 @@
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Location = new Point(283, 16);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Menu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Menu principal";
-            //Load += Menu_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

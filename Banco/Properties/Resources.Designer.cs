@@ -69,5 +69,15 @@ namespace Banco.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blue_Illustration_Money_Talk_Podcast_Logo_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Blue_Illustration_Money_Talk_Podcast_Logo-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
