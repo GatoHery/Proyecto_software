@@ -717,19 +717,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\daniz\\.nuget\\packages\\": {}
+    "C:\\Users\\yoshi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daniz\\OneDrive\\Escritorio\\Proyecto_software\\Banco\\Banco.csproj",
+      "projectUniqueName": "C:\\Users\\yoshi\\OneDrive\\Bloc de notas\\GitHub\\Proyecto_software\\Banco\\Banco.csproj",
       "projectName": "Banco",
-      "projectPath": "C:\\Users\\daniz\\OneDrive\\Escritorio\\Proyecto_software\\Banco\\Banco.csproj",
-      "packagesPath": "C:\\Users\\daniz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daniz\\OneDrive\\Escritorio\\Proyecto_software\\Banco\\obj\\",
+      "projectPath": "C:\\Users\\yoshi\\OneDrive\\Bloc de notas\\GitHub\\Proyecto_software\\Banco\\Banco.csproj",
+      "packagesPath": "C:\\Users\\yoshi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yoshi\\OneDrive\\Bloc de notas\\GitHub\\Proyecto_software\\Banco\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\daniz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yoshi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -779,7 +779,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
