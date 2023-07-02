@@ -183,3 +183,29 @@ Tabla workers
 +---+--------------------+-----------------+--------------------------------------+----------+
 |   | worker_position    | VARCHAR(15)     | Cargo del trabajador del banco       | NOT NULL |
 +---+--------------------+-----------------+--------------------------------------+----------+
+
+Imagenes de referencia
+++++++++++++++++++++++++
+
+diagramas
+----------
+
+.. image:: ./imagenes/diagrama.jpg
+    :alt: package_info_dashboard
+    :align: center
+
+.. image:: ./imagenes/diagrama_de_flujo_solicitud_seguro.png
+    :alt: package_info_dashboard
+    :align: center
+
+.. image:: ./imagenes/diagrama_entidad_relación_gestion_bancaria.png
+    :alt: package_info_dashboard
+    :align: center
+
+.. image:: ./imagenes/diagrama_entidad_relación_seguros.png
+    :alt: package_info_dashboard
+    :align: center  
+
+.. image:: ./imagenes/diagrama_transacción.png
+    :alt: package_info_dashboard
+    :align: center  
