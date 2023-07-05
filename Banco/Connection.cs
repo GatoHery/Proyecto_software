@@ -4,9 +4,9 @@ using Npgsql;
 namespace Banco{
     public static class Connection {
         private static string host = "localhost",
-            database = "BBBank",
+            database = "bbbank_v2",
             userId = "postgres",
-            password = "1234";
+            password = "5715C78F";
 
         private static string sConnection =
             $"Server={host};Port=5432;User Id={userId};Password={password};Database={database};";

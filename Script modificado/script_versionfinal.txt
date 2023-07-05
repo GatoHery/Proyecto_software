@@ -1,0 +1,86 @@
+CREATE TABLE customers
+(
+    customer_id CHARACTER(9) PRIMARY KEY,
+	customer_fullname VARCHAR(100) NOT NULL,
+    customer_username VARCHAR(30) NOT NULL,
+	customer_email VARCHAR(30) NOT NULL,
+	customer_phone VARCHAR(8) NOT NULL,
+    customer_password VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE bank_account
+(
+    account_number VARCHAR(25) PRIMARY KEY,
+    account_name VARCHAR(100) NOT NULL,
+	customer_id VARCHAR(9) NOT NULL,
+    money_amount MONEY NOT NULL,
+	account_type INTEGER NOT NULL,
+    CONSTRAINT fk_account_owner FOREIGN KEY(customer_id)
+	REFERENCES customers(customer_id)
+);
+
+CREATE TABLE transactions
+(
+    transaction_number SERIAL PRIMARY KEY,
+	account_number VARCHAR(25) NOT NULL,
+	transaction_amount MONEY NOT NULL,
+	transaction_comment VARCHAR(140),
+    transaction_type CHARACTER(1) NOT NULL,
+    transaction_date DATE NOT NULL,
+    transaction_hour TIME NOT NULL,
+	CONSTRAINT fk_account_number FOREIGN KEY(account_number)
+	REFERENCES bank_account(account_number)
+);
+
+CREATE TABLE workers
+(
+    worker_id SERIAL,
+    worker_fullname VARCHAR(100) NOT NULL,
+    worker_username VARCHAR(20) PRIMARY KEY,
+    worker_email VARCHAR(30) NOT NULL UNIQUE,
+    worker_password VARCHAR(30) NOT NULL,
+    worker_position VARCHAR(15) NOT NULL
+);
+
+INSERT INTO workers(worker_fullname, worker_username, worker_email, worker_password, worker_position)
+VALUES('Dennys Alberto Rivera Pascasio', 'drivera', 'drivera@bbbank.com', '1234', 'Ventanilla');
+
+CREATE TABLE insurance_customer
+(
+    customer_id CHARACTER(9) PRIMARY KEY,
+	customer_fullname VARCHAR(100) NOT NULL,
+	customer_email VARCHAR(30),
+	customer_phone VARCHAR(8) NOT NULL,
+    customer_password VARCHAR(30),
+	customer_address VARCHAR(100) NOT NULL,
+	customer_employment VARCHAR(25) NOT NULL,
+	customer_earning NUMERIC NOT NULL,
+	has_license BOOLEAN NOT NULL
+);
+
+CREATE TABLE insured_vehicle(
+	vehicle_id SERIAL PRIMARY KEY,
+	vehicle_make VARCHAR(10) NOT NULL,
+	vehicle_model VARCHAR(10) NOT NULL,
+	vehicle_year VARCHAR(4) NOT NULL,
+	vehicle_plate VARCHAR(7) NOT NULL UNIQUE,
+	vehicle_vin VARCHAR(17) NOT NULL,
+	vehicle_usage VARCHAR(17) NOT NULL,
+	car_value NUMERIC NOT NULL,
+	issued_to_id VARCHAR(9) NOT NULL,
+	insurance_accepted BOOLEAN NOT NULL,
+	FOREIGN KEY(issued_to_id)
+	REFERENCES insurance_customer(customer_id)
+);
+
+CREATE TABLE car_insurance_request(
+	request_id SERIAL PRIMARY KEY,
+	request_date DATE NOT NULL,
+	vehicle_id VARCHAR(7) REFERENCES insured_vehicle(vehicle_plate) NOT NULL,
+	customer_id VARCHAR(9) REFERENCES insurance_customer(customer_id) NOT NULL,
+	request_comments TEXT,
+	request_state VARCHAR(10) NOT NULL
+);
+
+
+
